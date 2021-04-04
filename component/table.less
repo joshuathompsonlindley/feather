@@ -1,0 +1,54 @@
+/*! table.component */
+
+table {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td, th {
+    border-right: 1px solid rgb(220, 220, 220);
+    padding: 8px 12px;
+
+    &:last-child {
+        border-right: 0;
+    }
+}
+
+td {
+    border-top: 1px solid rgb(220, 220, 220);
+    transition: ease-out 0.05s;
+    -moz-transition: ease-out 0.05s;
+    -o-transition: ease-out 0.05s;
+    -webkit-transition: ease-out 0.05s;
+}
+
+table tr th {
+    background-color: @GREEN;
+    color: white;
+}
+
+table tr {
+    transition: ease-out 0.05s;
+    -moz-transition: ease-out 0.05s;
+    -o-transition: ease-out 0.05s;
+    -webkit-transition: ease-out 0.05s;
+}
+
+table tr:hover td {
+    background-color: rgb(241, 241, 241);
+    transition: ease-in 0.05s;
+    -moz-transition: ease-in 0.05s;
+    -o-transition: ease-in 0.05s;
+    -webkit-transition: ease-in 0.05s; 
+}
+
+table tr td:hover {
+    background-color: rgb(219, 219, 219);
+    transition: ease-in 0.05s;
+    -moz-transition: ease-in 0.05s;
+    -o-transition: ease-in 0.05s;
+    -webkit-transition: ease-in 0.05s; 
+}
+
+/*! table.component */

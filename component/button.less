@@ -1,0 +1,47 @@
+/*! button.component */
+
+@import "../global/palette.less";
+
+button {
+  border: none;
+}
+
+a.button, button {
+    transition: ease-out 0.1s;
+    -moz-transition: ease-out 0.1s;
+    -o-transition: ease-out 0.1s;
+    -webkit-transition: ease-out 0.1s;
+    padding: 10px 20px;
+    color: white;
+    background: @BLUE;
+    text-decoration: none;
+
+    &:hover {
+        transition: ease-in 0.1s;
+        -moz-transition: ease-in 0.1s;
+        -o-transition: ease-in 0.1s;
+        -webkit-transition: ease-in 0.1s; 
+        background: @BLUE-ALT;
+    }
+
+    &.outline {
+      background: none;
+      border: 2px solid @BLUE;
+      color: @GRAY-DARK;
+      padding: 8px 18px;
+
+
+      &:hover {
+        transition: ease-in 0.1s;
+        -moz-transition: ease-in 0.1s;
+        -o-transition: ease-in 0.1s;
+        -webkit-transition: ease-in 0.1s; 
+        background: none;
+        color: @GRAY-LIGHT;
+
+        border: 2px solid @BLUE-ALT;
+      }
+    }
+}
+
+/*! button.component */

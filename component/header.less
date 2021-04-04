@@ -1,0 +1,29 @@
+/*! topbar.component */
+
+header {
+    position: fixed;
+    height: 25px ;
+    width: 100%;
+    background-color: @GRAY-DARK;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    top: 0;
+    z-index: 10;
+    color: white !important;
+    font-weight: 300;
+    padding: 10px 15px;
+    float: left;
+
+    +nav {
+        margin-top: 50px;
+    }
+
+    +nav+.body {
+        padding-top: 45px;
+        margin-top: 5px;        
+    }
+}
+
+/*! topbar.component */

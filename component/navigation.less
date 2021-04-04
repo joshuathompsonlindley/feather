@@ -1,0 +1,96 @@
+/*! sidenavigation.component */
+
+@import "../global/palette.less";
+
+nav {
+    position: fixed;
+    display: none;
+    width: 250px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+}
+
+@media (min-width:1060px) {
+    nav {
+         display: block;
+    }
+}
+
+nav+main {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+
+}
+@media (min-width:1060px) {
+    nav+main {
+         left:250px;
+    }
+}
+
+nav ul {
+    padding: 0;
+    color: @GRAY-DARK;
+    font-size: 0.9em;
+}
+
+nav ul a {
+    margin: 0.5rem 0;
+    padding: 0.2rem 1rem;
+}
+
+nav li {
+    display: block;
+    
+}
+
+nav a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+
+    transition: ease 0.1s;
+    -webkit-transition: ease 0.1s;
+    -o-transition: ease 0.1s;
+    -moz-transition: ease 0.1s;
+
+    &:active, &:focus, &:hover {
+        background-color: @RED;
+        transition: ease 0.1s;
+        color: white;
+        -webkit-transition: ease 0.1s;
+        -o-transition: ease 0.1s;
+        -moz-transition: ease 0.1s;
+    }
+}
+
+nav a.title {
+    font-weight: bold;
+    color: @GRAY-DARK;
+    font-size: 1.05rem;
+    padding-bottom: 20px;
+
+    &:active, &:focus, &:hover {
+        background-color: inherit;
+        color: @GRAY-DARK;
+    }
+}
+
+nav ul ul {
+   margin-top: 15px;
+   margin-bottom: 10px;
+}
+
+nav ul ul li  {
+    color: @GRAY;
+    padding-left: 10px;
+    margin-top: -10px;
+}
+
+/*! sidenavigation.component */

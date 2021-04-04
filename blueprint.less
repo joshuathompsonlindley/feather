@@ -1,0 +1,82 @@
+/*
+# feather: blueprint framework + default blueprint theme
+# an Overflow project | GPLv3
+# https://overflow.digital/feather#blueprint
+*/
+
+@import "global/palette.less";
+@import "global/font.less";
+@import "global/normalize.less";
+@import "global/layout.less";
+
+@import "component/heading.less";
+@import "component/text.less";
+@import "component/button.less";
+@import "component/navigation.less";
+@import "component/header.less";
+@import "component/footer.less";
+@import "component/table.less";
+@import "component/image.less";
+@import "component/card.less";
+
+/*! global.component */
+
+@keyframes fadein {
+    0%   {
+         opacity: 0;
+    }
+    100% {
+         opacity: 1;
+    }
+}
+
+body, html {
+    color: @GRAY-DARK;
+    font-size: 16px;
+    font-family: Lato, Helvetica Neue, Helvetica, sans-serif;
+    font-variant-ligatures: common-ligatures;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    scroll-padding: 45px 0 0 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    animation: fadein 0.25s ease-in-out;
+    -webkit-animation: fadein 0.25s ease-in-out;
+    -o-animation: fadein 0.25s ease-in-out;
+    -moz-animation: fadein 0.25s ease-in-out;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(241, 241, 241);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(136, 136, 136);
+    transition: ease-in-out 0.1s;
+    -moz-transition: ease-in-out 0.1s;
+    -o-transition: ease-in-out 0.1s;
+    -webkit-transition: ease-in-out 0.1s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(85, 85, 85);
+    transition: ease-in-out 0.1s;
+    -moz-transition: ease-in-out 0.1s;
+    -o-transition: ease-in-out 0.1s;
+    -webkit-transition: ease-in-out 0.1s;
+}
+
+.body {
+    margin-bottom: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 750px;
+}
+
+/*! global.component */

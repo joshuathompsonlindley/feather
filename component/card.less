@@ -1,0 +1,41 @@
+/* ! card.component */
+
+div.card {
+    border-left: solid 3px @RED;
+    padding: 5px 25px;
+    box-shadow: 0 4px 2px -1px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0 4px 2px -1px rgba(0,0,0,0.16);
+    -webkit-box-shadow: 0 4px 2px -1px rgba(0,0,0,0.16);
+    -o-box-shadow: 0 4px 2px -1px rgba(0,0,0,0.16);
+
+    &:last-of-type {
+        margin-bottom: 10px;
+    }
+}
+
+div.card h2 {
+    font-size: 16px;
+}
+
+div.card h3 {
+    font-size: 12px;
+    text-transform: lowercase;
+    border-bottom: 1px solid @GRAY-OPAQUE;    
+    font-style: italic;
+    color: @GRAY-LIGHT;
+    font-weight: 300;
+    margin: 5px 0 15px 0;
+}
+
+div.card p {
+    margin: initial;
+    color: @GRAY;
+    font-size: 14px;
+}
+
+div.card a {
+    margin: initial;
+    font-size: 14px;
+}
+
+/* ! card.component */
